@@ -7,7 +7,9 @@ import { TestingComponent } from './testing/testing.component';
 import { CustomerComponent } from './customer/customer.component';
 import { SupplierComponent } from './supplier/supplier.component';
 import { UserComponent } from './user/user.component';
-import { UserAuthModule } from './user-auth/user-auth.module';
+import { UserAuthModule } from './user-auth/user-auth.module';  //apply moduleng
+import { ClickComponent } from './click/click.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { UserAuthModule } from './user-auth/user-auth.module';
     TestingComponent,
     CustomerComponent,
     SupplierComponent,
-    UserComponent
+    UserComponent,
+    ClickComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
