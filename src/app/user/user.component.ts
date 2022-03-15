@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
     <p class="allTemplate">
       user works!
     </p>
+    <h1>{{testfunction()}}</h1>
+
   `,
   styles: [
     '.allTemplate{color:red}'
@@ -13,9 +15,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserComponent implements OnInit {
 
-  constructor() { }
+
+  testfunction(){
+    var a = "Inline Style Inline Template"
+
+    return a;
+  }
+
+
+constructor() { }
 
   ngOnInit(): void {
   }
+
+
 
 }

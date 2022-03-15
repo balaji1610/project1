@@ -7,6 +7,7 @@ import { TestingComponent } from './testing/testing.component';
 import { CustomerComponent } from './customer/customer.component';
 import { SupplierComponent } from './supplier/supplier.component';
 import { UserComponent } from './user/user.component';
+import { UserAuthModule } from './user-auth/user-auth.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UserComponent } from './user/user.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    UserAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
