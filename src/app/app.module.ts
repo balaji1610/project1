@@ -10,6 +10,7 @@ import { UserComponent } from './user/user.component';
 import { UserAuthModule } from './user-auth/user-auth.module';  //apply moduleng
 import { ClickComponent } from './click/click.component';
 import { TestComponent } from './test/test.component';
+import { BindingComponent } from './binding/binding.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { TestComponent } from './test/test.component';
     SupplierComponent,
     UserComponent,
     ClickComponent,
-    TestComponent
+    TestComponent,
+    BindingComponent
   ],
   imports: [
     BrowserModule,
