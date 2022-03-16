@@ -18,6 +18,9 @@ export class LoopComponent implements OnInit {
   userarray2 = [{name:"Balaji",area:'Chennai',job:'Web Developer',skillset:["angular","react",'php']},
   {name:"Alex",area:'Chennai',job:'Angular Developer',skillset:["HTML","CSS",'BOOTSTRAP']},
   {name:"Chitra",area:'Chennai',job:'React Developer',skillset:["Sql","Angular"]}]
+
+  color = "red";
+  font ="23px;";
   constructor() { }
 
   ngOnInit(): void {
