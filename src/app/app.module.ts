@@ -11,6 +11,7 @@ import { UserAuthModule } from './user-auth/user-auth.module';  //apply moduleng
 import { ClickComponent } from './click/click.component';
 import { TestComponent } from './test/test.component';
 import { BindingComponent } from './binding/binding.component';
+import { PropertyComponent } from './property/property.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BindingComponent } from './binding/binding.component';
     UserComponent,
     ClickComponent,
     TestComponent,
-    BindingComponent
+    BindingComponent,
+    PropertyComponent
   ],
   imports: [
     BrowserModule,
