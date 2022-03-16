@@ -1,0 +1,41 @@
+
+
+
+<h1 *ngIf="booldata">Conditional Statement</h1>
+
+<h1 *ngIf="booldata2 else id1 ">If Else</h1>
+
+<ng-template #id1>
+  <h1>ID 1</h1>
+
+
+</ng-template>
+
+<p *ngIf ="mark ==35; then pass else fail" >Mark</p>
+
+
+<ng-template #pass>
+
+  <h1>You have Pass</h1>
+
+
+</ng-template>
+
+
+<ng-template #fail>
+
+  <h1>You have Fail</h1>
+
+
+</ng-template>
+
+<!--Switch -->
+<div [ngSwitch]="animal">
+
+<p *ngSwitchCase="'lion'">LION</p>
+
+<p *ngSwitchCase="'Tiger'">TIGER</p>
+
+<p *ngSwitchDefault>None</p>
+
+</div>

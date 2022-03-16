@@ -12,6 +12,7 @@ import { ClickComponent } from './click/click.component';
 import { TestComponent } from './test/test.component';
 import { BindingComponent } from './binding/binding.component';
 import { PropertyComponent } from './property/property.component';
+import { LoopComponent } from './loop/loop.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PropertyComponent } from './property/property.component';
     ClickComponent,
     TestComponent,
     BindingComponent,
-    PropertyComponent
+    PropertyComponent,
+    LoopComponent
   ],
   imports: [
     BrowserModule,
