@@ -39,3 +39,34 @@
 <p *ngSwitchDefault>None</p>
 
 </div>
+
+
+<ul *ngFor="let x of userarray">
+  <li style="list-style-type:none">{{x}}</li>
+</ul>
+
+
+<table class="table">
+  <thead >
+    <tr >
+      <th>Name</th>
+      <th>Area</th>
+      <th>Job</th>
+      <th>Skills</th>
+</tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let y of userarray2">
+
+      <td>{{y.name}}</td>
+      <td>{{y.area}}</td>
+      <td>{{y.job}}</td>
+      <td>
+      <ul *ngFor ="let skills of y.skillset">
+        <li style="list-style-type:none"><span>{{skills}}</span></li>
+      </ul>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
