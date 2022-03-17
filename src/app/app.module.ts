@@ -17,7 +17,8 @@ import { FormComponent } from './form/form.component';
 import {FormsModule} from "@angular/forms";
 import { MaterialComponent } from './material/material.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations' // FormsModule
-import { MatSliderModule } from '@angular/material/slider'; //angular material
+import { MatSliderModule } from '@angular/material/slider';
+import { ChildComponent } from './child/child.component'; 
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { MatSliderModule } from '@angular/material/slider'; //angular material
     PropertyComponent,
     LoopComponent,
     FormComponent,
-    MaterialComponent
+    MaterialComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

@@ -17,6 +17,8 @@ export class AppComponent {
 
   newClass='class01'  // binding assign class
 
+  currentItem = 'Angular 13 tutorial';
+
   ifCondition(){
 
     var votingage = 18;
