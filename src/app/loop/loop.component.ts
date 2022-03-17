@@ -21,6 +21,7 @@ export class LoopComponent implements OnInit {
 
   color = "red";
   font ="23px;";
+  twoday ='';
   constructor() { }
 
   ngOnInit(): void {
