@@ -15,7 +15,9 @@ import { PropertyComponent } from './property/property.component';
 import { LoopComponent } from './loop/loop.component';
 import { FormComponent } from './form/form.component';
 import {FormsModule} from "@angular/forms";
-import { MaterialComponent } from './material/material.component' // FormsModule
+import { MaterialComponent } from './material/material.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations' // FormsModule
+import { MatSliderModule } from '@angular/material/slider'; //angular material
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { MaterialComponent } from './material/material.component' // FormsModule
     BrowserModule,
     AppRoutingModule,
     UserAuthModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
