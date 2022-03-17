@@ -1,0 +1,24 @@
+
+
+<form #form="ngForm" (submit)=GetDataForm(form.value)>
+
+    <input ngModel type ="text"   placeholder="Username" name="username" required >
+
+<br>
+<br/>
+  <input type ="email" ngModel   placeholder="Email" name="email" required >
+  <br/>
+  <br/>
+  <input type ="text"  ngModel name="mobilenumber" placeholder="MobileNumber" minlength="10" maxlength="10" required >
+  <br/>
+  <br/>
+  <button input type="submit">SUBMIT</button>
+</form>
+
+<div>
+<ul style="list-style-type:none">
+  <li>{{ displayData.username }}</li>
+  <li>{{ displayData.email }}</li>
+  <li>{{ displayData.mobilenumber }}</li>
+</ul>
+</div>

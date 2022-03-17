@@ -13,6 +13,8 @@ import { TestComponent } from './test/test.component';
 import { BindingComponent } from './binding/binding.component';
 import { PropertyComponent } from './property/property.component';
 import { LoopComponent } from './loop/loop.component';
+import { FormComponent } from './form/form.component';
+import {FormsModule} from "@angular/forms" // FormsModule
 
 @NgModule({
   declarations: [
@@ -25,12 +27,14 @@ import { LoopComponent } from './loop/loop.component';
     TestComponent,
     BindingComponent,
     PropertyComponent,
-    LoopComponent
+    LoopComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    UserAuthModule
+    UserAuthModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
