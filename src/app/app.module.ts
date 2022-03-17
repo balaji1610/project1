@@ -14,7 +14,8 @@ import { BindingComponent } from './binding/binding.component';
 import { PropertyComponent } from './property/property.component';
 import { LoopComponent } from './loop/loop.component';
 import { FormComponent } from './form/form.component';
-import {FormsModule} from "@angular/forms" // FormsModule
+import {FormsModule} from "@angular/forms";
+import { MaterialComponent } from './material/material.component' // FormsModule
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {FormsModule} from "@angular/forms" // FormsModule
     BindingComponent,
     PropertyComponent,
     LoopComponent,
-    FormComponent
+    FormComponent,
+    MaterialComponent
   ],
   imports: [
     BrowserModule,

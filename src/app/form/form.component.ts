@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms'; // Form
+// import { FormGroup, FormControl, FormArray } from '@angular/forms'
 
 @Component({
   selector: 'app-form',
@@ -12,6 +13,10 @@ export class FormComponent implements OnInit {
   GetDataForm (data:NgForm){
    this.displayData = data;
   }
+show=true;
+Toggle(){
+this.show != this.show;
+}
   constructor() { }
 
   ngOnInit(): void {
