@@ -7,7 +7,7 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
-  @Input() item='';
+  @Input() item = ''; // decorate the property with @Input()
   constructor() { }
 
   ngOnInit(): void {
