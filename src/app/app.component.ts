@@ -3,35 +3,30 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   title = 'project1';
-  name = "balaji";
+  name = 'balaji';
 
-  getvalue(){  // Interpolation Databinding
+  getvalue() {
+    // Interpolation Databinding
 
-    return 'Sun Rise'
+    return 'Sun Rise';
   }
-  num=15;  // calculation
+  num = 15; // calculation
 
-  newClass='class01'  // binding assign class
+  newClass = 'class01'; // binding assign class
 
   currentItem = 'Angular 13 tutorial';
 
-  ifCondition(){
-
+  ifCondition() {
     var votingage = 18;
 
-    if(votingage>=18){
-
-      return "You Eligible For Vote"
-    }else{
-      return "Your Not Eligble For"
+    if (votingage >= 18) {
+      return 'You Eligible For Vote';
+    } else {
+      return 'Your Not Eligble For';
     }
   }
-
-
-
-
-}// End
+} // End

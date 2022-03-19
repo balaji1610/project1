@@ -1,26 +1,27 @@
-
 <app-testing></app-testing>
 
-<h1>Hello {{title  }}</h1>
+<h1>Hello {{ title }}</h1>
 
-<p class="new">Hi {{name}}</p>
+<p class="new">Hi {{ name }}</p>
 
-<h1>{{getvalue()}}</h1>
+<h1>{{ getvalue() }}</h1>
 
-<h1>{{45+45+num}}</h1>
+<h1>{{ 45 + 45 + num }}</h1>
 
-<h1>{{num == 100}}</h1> <!--compare-->
+<h1>{{ num == 100 }}</h1>
+<!--compare-->
 
-<p class="{{newClass}}">Binding Class</p>
+<p class="{{ newClass }}">Binding Class</p>
 
-<p>{{ifCondition()}}</p>
-<app-customer></app-customer>  <!--inline style-->
+<p>{{ ifCondition() }}</p>
+<app-customer></app-customer>
+<!--inline style-->
 
-<app-supplier></app-supplier>  <!--inline template-->
+<app-supplier></app-supplier>
+<!--inline template-->
 
-<app-user></app-user>   <!--- inline style inline template -->
-
-
+<app-user></app-user>
+<!--- inline style inline template -->
 
 <!--Module START-->
 
@@ -28,16 +29,15 @@
 
 <app-one></app-one>
 
-
-
 <!--Module END-->
 
-<app-click></app-click>   <!--Key Events-->
+<app-click></app-click>
+<!--Key Events-->
 
 <app-binding></app-binding>
 
-
-<app-property></app-property> <!--property binding-->
+<app-property></app-property>
+<!--property binding-->
 
 <app-loop></app-loop>
 
@@ -45,7 +45,7 @@
 <!-- <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
 <button mat-raised-button color="primary">Primary</button> -->
 
-<app-child [item] = "currentItem  "></app-child>
+<app-child [item]="currentItem"></app-child>
 
 <app-pipe></app-pipe>
 
@@ -54,4 +54,3 @@
 <h1>{{num=200}}</h1> calc
 
 <h1>{{num++}}</h1> compare  -->
-
