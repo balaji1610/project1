@@ -1,3 +1,29 @@
+<!--DOC START-->
+
+<a [href]="link" target="_blank"> click here </a>
+<div class="pd"></div>
+<p [style.color]="color">HTML</p>
+<div class="pd"></div>
+{{ age() }}
+<div class="pd"></div>
+<button [disabled]="canClick" (click)="message()">Click Here</button>
+<div class="pd"></div>
+
+<button type="button" (click)="clickimage()">MEAN</button>
+
+<div *ngIf="condition; else nocondition">
+  <h1>Angular</h1>
+
+  <img [src]="angularImage" alt="Angular Logo" width="150px" height="90px" />
+</div>
+<ng-template #nocondition>
+  <h1>Node JS</h1>
+  <img [src]="NodeImage" alt="Node Logo" width="150px" height="90px" />
+</ng-template>
+
+<div class="pd"></div>
+<!-- END-->
+<div class="pd"></div>
 <app-testing></app-testing>
 
 <h1>Hello {{ title }}</h1>
@@ -48,6 +74,8 @@
 <app-child [item]="currentItem"></app-child>
 
 <app-pipe></app-pipe>
+
+<app-revision></app-revision>
 
 <!--
   can not interpolation

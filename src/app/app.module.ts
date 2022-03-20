@@ -19,7 +19,8 @@ import { MaterialComponent } from './material/material.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations' // FormsModule
 import { MatSliderModule } from '@angular/material/slider';
 import { ChildComponent } from './child/child.component';
-import { PipeComponent } from './pipe/pipe.component'; 
+import { PipeComponent } from './pipe/pipe.component';
+import { RevisionComponent } from './revision/revision.component'; 
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PipeComponent } from './pipe/pipe.component';
     FormComponent,
     MaterialComponent,
     ChildComponent,
-    PipeComponent
+    PipeComponent,
+    RevisionComponent
   ],
   imports: [
     BrowserModule,
