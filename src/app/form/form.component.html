@@ -1,32 +1,37 @@
+<form #form="ngForm" (submit)="GetDataForm(form.value)">
+  <input ngModel type="text" placeholder="Username" name="username" required />
 
-
-<form #form="ngForm" (submit)=GetDataForm(form.value)>
-
-    <input ngModel type ="text"   placeholder="Username" name="username" required >
-
-<br>
-<br/>
-  <input type ="email" ngModel   placeholder="Email" name="email" required >
-  <br/>
-  <br/>
-  <input type ="text"  ngModel name="mobilenumber" placeholder="MobileNumber" minlength="10" maxlength="10" required >
-  <br/>
-  <br/>
+  <br />
+  <br />
+  <input type="email" ngModel placeholder="Email" name="email" required />
+  <br />
+  <br />
+  <input
+    type="text"
+    ngModel
+    name="mobilenumber"
+    placeholder="MobileNumber"
+    minlength="10"
+    maxlength="10"
+    required
+  />
+  <br />
+  <br />
   <button input type="submit">SUBMIT</button>
 </form>
 
 <div>
-<ul style="list-style-type:none">
-  <li>{{ displayData.username }}</li>
-  <li>{{ displayData.email }}</li>
-  <li>{{ displayData.mobilenumber }}</li>
-</ul>
+  <ul style="list-style-type: none">
+    <li>{{ displayData.username }}</li>
+    <li>{{ displayData.email }}</li>
+    <li>{{ displayData.mobilenumber }}</li>
+  </ul>
 </div>
-<br>
-<br>
-<button (click) = Toggle() >Toggle</button>
+<br />
+<br />
+<button (click)="Toggle()">Toggle</button>
 
-<h2 *ngIf = "show">Toggle Button</h2>
+<h2 *ngIf="show">Toggle Button</h2>
 
-<br>
-<br>
+<br />
+<br />

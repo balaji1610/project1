@@ -5,21 +5,18 @@ import { NgForm } from '@angular/forms'; // Form
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.css']
+  styleUrls: ['./form.component.css'],
 })
 export class FormComponent implements OnInit {
-
-  displayData:any
-  GetDataForm (data:NgForm){
-   this.displayData = data;
+  displayData: any;
+  GetDataForm(data: NgForm) {
+    this.displayData = data;
   }
-show=true;
-Toggle(){
-this.show != this.show;
-}
-  constructor() { }
-
-  ngOnInit(): void {
+  show: any = true;
+  Toggle() {
+    this.show != this.show;
   }
+  constructor() {}
 
+  ngOnInit(): void {}
 }

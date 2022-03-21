@@ -1,26 +1,53 @@
+<!--DOC START-->
 
+<a [href]="link" target="_blank"> click here </a>
+<div class="pd"></div>
+<p [style.color]="color">HTML</p>
+<div class="pd"></div>
+{{ age() }}
+<div class="pd"></div>
+<button [disabled]="canClick" (click)="message()">Click Here</button>
+<div class="pd"></div>
+
+<button type="button" (click)="clickimage()">MEAN</button>
+
+<div *ngIf="condition; else nocondition">
+  <h1>Angular</h1>
+
+  <img [src]="angularImage" alt="Angular Logo" width="150px" height="90px" />
+</div>
+<ng-template #nocondition>
+  <h1>Node JS</h1>
+  <img [src]="NodeImage" alt="Node Logo" width="150px" height="90px" />
+</ng-template>
+
+<div class="pd"></div>
+<!-- END-->
+<div class="pd"></div>
 <app-testing></app-testing>
 
-<h1>Hello {{title  }}</h1>
+<h1>Hello {{ title }}</h1>
 
-<p class="new">Hi {{name}}</p>
+<p class="new">Hi {{ name }}</p>
 
-<h1>{{getvalue()}}</h1>
+<h1>{{ getvalue() }}</h1>
 
-<h1>{{45+45+num}}</h1>
+<h1>{{ 45 + 45 + num }}</h1>
 
-<h1>{{num == 100}}</h1> <!--compare-->
+<h1>{{ num == 100 }}</h1>
+<!--compare-->
 
-<p class="{{newClass}}">Binding Class</p>
+<p class="{{ newClass }}">Binding Class</p>
 
-<p>{{ifCondition()}}</p>
-<app-customer></app-customer>  <!--inline style-->
+<p>{{ ifCondition() }}</p>
+<app-customer></app-customer>
+<!--inline style-->
 
-<app-supplier></app-supplier>  <!--inline template-->
+<app-supplier></app-supplier>
+<!--inline template-->
 
-<app-user></app-user>   <!--- inline style inline template -->
-
-
+<app-user></app-user>
+<!--- inline style inline template -->
 
 <!--Module START-->
 
@@ -28,16 +55,15 @@
 
 <app-one></app-one>
 
-
-
 <!--Module END-->
 
-<app-click></app-click>   <!--Key Events-->
+<app-click></app-click>
+<!--Key Events-->
 
 <app-binding></app-binding>
 
-
-<app-property></app-property> <!--property binding-->
+<app-property></app-property>
+<!--property binding-->
 
 <app-loop></app-loop>
 
@@ -45,13 +71,18 @@
 <!-- <mat-slider min="1" max="100" step="1" value="50"></mat-slider>
 <button mat-raised-button color="primary">Primary</button> -->
 
+<<<<<<< HEAD
 <app-child [item] = "currentItem"></app-child>
+=======
+<app-child [item]="currentItem"></app-child>
+>>>>>>> b159f95efbc61b7609d38ea5e3478d89c031f2c9
 
 <app-pipe></app-pipe>
+
+<app-revision></app-revision>
 
 <!--
   can not interpolation
 <h1>{{num=200}}</h1> calc
 
 <h1>{{num++}}</h1> compare  -->
-
